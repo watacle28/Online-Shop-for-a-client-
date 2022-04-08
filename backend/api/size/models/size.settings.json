@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sizes",
+  "info": {
+    "name": "Size",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "size": {
+      "type": "integer"
+    },
+    "product": {
+      "via": "sizes",
+      "model": "product"
+    }
+  }
+}
