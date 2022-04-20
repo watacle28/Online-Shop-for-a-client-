@@ -16,17 +16,28 @@ const ProductsList = ({ products }) => {
                   <NextImage media={_product.image} />
                 </div>
               </div>
-              <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
-                <h4 className="mt-1 font-semibold text-base leading-tight truncate text-gray-700">
-                  {_product.title}
-                </h4>
-                <div className="mt-1 text-sm text-gray-700">
-                  {_product.description}
-                </div>
-              </div>
-              <div>
-                {_product.price}
-              </div>
+              <form class="flex-auto p-6">
+        <div class="flex flex-wrap">
+            <h1 class="flex-auto text-xl font-semibold dark:text-gray-50">
+            {_product.title}
+            </h1>
+            <div class="text-xl font-semibold text-gray-500 dark:text-gray-300">
+            R{_product.price}
+            </div>
+            {/* <div class="w-full flex-none text-sm font-medium text-gray-500 dark:text-gray-300 mt-2">
+            {_product.description}
+            </div> */}
+        </div>
+        <div class="flex items-baseline mt-4 mb-6 text-gray-700 dark:text-gray-300">
+                  </div>
+                  <div class="flex mb-4 text-sm font-medium">
+                      <button type="button" className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                      >
+                          View product
+                      </button>
+                  </div>
+            </form>
+              
             </a>
           </Link>
         </div>
